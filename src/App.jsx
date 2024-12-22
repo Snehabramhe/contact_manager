@@ -15,6 +15,7 @@ const App = () => {
       <BrowserRouter>
       <Navbar/>
         <Routes>
+          <Route path={'/contact_manager'} element={<Navigate to={'/show-contact'}/>}/>
           <Route path={'/'} element={<Navigate to={'/show-contact'}/>}/>
           <Route path={'/add-contact'} element={<AddContact/>}/>
           <Route path={'/edit-contact/:contactId'} element={<EditContact/>}/>
